@@ -16,9 +16,26 @@
             "homepage": "http://dmeroff.ru"
         }
     ],
+    "repositories":[
+        {
+          "type": "package",
+            "package": {
+                "name": "yiisoft/yii2",
+                "version": "dev-master",
+                "source": {
+                  "url": "https://github.com/GrowlMediaLtd/yii2.git",
+                  "type": "git",
+                  "reference": "master"
+                },
+                "autoload": {
+                  "classmap": [""]
+                }
+            }
+        }
+    ],    
     "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii2": "~2.0",
+        "yiisoft/yii2": "dev-master",
         "yiisoft/yii2-swiftmailer": "~2.0",
         "yiisoft/yii2-authclient": "~2.0",
         "yiisoft/yii2-jui": "~2.0",
